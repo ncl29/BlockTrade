@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "170979054301",
+    "project_id": "block-trade-final",
+    "storage_bucket": "block-trade-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170979054301:android:8b280f17e0eadf150d4134",
+        "android_client_info": {
+          "package_name": "com.example.blocktradefinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo4ErFsyaaEc4-03Do7GTtYrmzJw5yy_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

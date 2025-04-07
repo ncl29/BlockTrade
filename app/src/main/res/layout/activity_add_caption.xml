@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/secondary"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:contentDescription="Back Button"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="Add Caption"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomButtons"
+        android:layout_below="@id/topBar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/capturedImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_launcher_background"/>
+
+            <RadioGroup
+                android:id="@+id/tradeSaleRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/capturedImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioForTrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:text="For Trade"
+                    android:layout_marginEnd="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radioForSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:text="For Sale" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/captionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tradeSaleRadioGroup"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter Caption"
+                android:fontFamily="@font/inter"
+                android:padding="16dp"
+                android:textColor="#001d3d"
+                android:textColorHint="#B0BEC5"
+                android:textSize="18sp"
+                android:backgroundTint="#4FC3F7" />
+
+            <RelativeLayout
+                android:id="@+id/locationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/captionEditText"
+                android:layout_marginTop="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <EditText
+                    android:id="@+id/locationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Detect Location..."
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="none"
+                    android:drawableEnd="@drawable/ic_location"
+                    android:padding="18dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/round_edittext" />
+
+                <EditText
+                    android:id="@+id/priceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationEditText"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="₱ 0.00"
+                    android:inputType="numberDecimal"
+                    android:padding="16dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#001d3d"
+                    android:textColorHint="#B0BEC5"
+                    android:textSize="18sp"
+                    android:backgroundTint="#4FC3F7" />
+
+                <TextView
+                    android:id="@+id/categoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/priceEditText"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Category"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#001d3d" />
+
+                <RelativeLayout
+                    android:id="@+id/spinnerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryLabel"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_edittext">
+
+                    <Spinner
+                        android:id="@+id/classificationSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="40dp"
+                        android:padding="15dp"
+                        android:textSize="18sp"
+                        android:popupBackground="#FFFFFF"
+                        android:spinnerMode="dropdown"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/spinnerArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown"
+                        android:contentDescription="Dropdown arrow"
+                        app:tint="#001d3d" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:id="@+id/bottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#050C9C"
+            android:textSize="18sp"
+            android:text="POST"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#72383D"
+            android:textSize="18sp"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#40000000"/> <!-- Black with 25% opacity -->
+            <corners android:radius="5dp"/>  <!-- Optional: Rounded corners -->
+            <padding android:left="1dp" android:top="2dp"/> <!-- X=1, Y=2 -->
+        </shape>
+    </item>
+
+    <!-- Button Layer -->
+    <item android:left="1dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#DEE8EA"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+</layer-list>

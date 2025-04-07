@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BlockTrade</string>
+
+    <string-array name="trade_options">
+        <item>FOR SALE</item>
+        <item>FOR TRADE</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="classification_array">
+        <item>CLOTHES</item>
+        <item>BAGS</item>
+        <item>UTENSILS</item>
+        <item>SHOES</item>
+        <item>GADGETS</item>
+        <item>HEADWEAR</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    // Loading Font
+    <color name="blue">#3ABEF9</color>
+
+    <color name="primary">#EBF4F6</color>
+    <color name="secondary">#0F3D3E</color>
+
+    //Sign Page
+    <color name="textbox">#E1F7F5</color>
+    <color name="placeholder_txt">#656565</color>
+    <color name="ic_color">#B86218</color>
+    <color name="btn">#0F3D3E</color>
+    <color name="already">#0E46A3</color>
+    <color name="font">#FFFFFF</color>
+
+    //Home
+    <color name="fontblue">#262A56</color>
+
+    //Button
+    <color name="btn_pressed">#B86218</color>
+
+    //NavBar
+    <color name="selected_icon">#0F3D3E</color> <!-- Gold for selected icon -->
+    <color name="selected_bg">#ffff</color> <!-- Light gray background -->
+
+    <color name="default_icon">#FFFFFF</color> <!-- White color when unselected -->
+
+    //Transaction
+    <color name="new_btn_color">#FF5733</color> <!-- Button background color -->
+    <color name="new_font_color">#FFFFFF</color> <!-- Font color when clicked -->
+
+    //Add
+    <color name="clicked_color">#0F3D3E</color>
+
+    //Nav_Item_Background
+    <color name="selected_bg_color">#054D6A</color>
+
+    //Nav_Item_TextColor
+    <color name="selected_text_color">#0EBAFF</color>
+    <color name="default_text_color">#000000</color>
+
+    //SIDE BAR
+    <color name="btn_default">#0F3D3E</color>
+
+    //Active/Inactive
+    <color name="active_color">#B86218</color>
+    <color name="default_button_color">#DEE8EA</color>
+    <color name="blackie">#262A56</color>  <!-- Default Text Color for Buttons -->
+    <color name="whitey">#FFFFFF</color>  <!-- White Text Color -->
+
+    //SEARCH
+    <color name="loob">#DDBEA2</color>
+    <color name="filter_ic">#000957</color>
+</resources>
