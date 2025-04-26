@@ -121,7 +121,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/productRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigationView"
             android:layout_below="@+id/sale_trade_spinner"
             android:layout_marginTop="60dp"

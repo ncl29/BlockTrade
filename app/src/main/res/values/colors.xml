@@ -36,6 +36,9 @@
     //Add
     <color name="clicked_color">#0F3D3E</color>
 
+    //Text
+    <color name="textcolor">#C7C7C7</color>
+
     //Nav_Item_Background
     <color name="selected_bg_color">#054D6A</color>
 

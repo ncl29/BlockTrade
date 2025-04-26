@@ -50,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/productImage"
@@ -122,6 +123,19 @@
                 android:text="Owner's Name"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <!-- Delete Button -->
+            <Button
+                android:id="@+id/deleteProductButton"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/btn_pressed"
+                android:text="Delete Product"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
         </LinearLayout>
     </ScrollView>
 

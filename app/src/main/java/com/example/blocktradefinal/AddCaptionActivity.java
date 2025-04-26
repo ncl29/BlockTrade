@@ -65,7 +65,6 @@ public class AddCaptionActivity extends AppCompatActivity {
         radioForSale = findViewById(R.id.radioForSale);
         classificationSpinner = findViewById(R.id.classificationSpinner);
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-
         // Load image URI
         String imageUriString = getIntent().getStringExtra("imageUri");
         if (imageUriString == null) {

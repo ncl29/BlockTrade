@@ -1,5 +1,7 @@
 package com.example.blocktradefinal;
 
+import java.util.Objects;
+
 public class Product {
 
     private String name;
@@ -10,6 +12,7 @@ public class Product {
     private String tradeType;
     private String imageUriString;
     private int imageResId;
+    private String productId;
 
     // Constructor
     public Product(String name, String location, String price, String owner, String category, String tradeType, String imageUriString, int imageResId) {
@@ -23,7 +26,17 @@ public class Product {
         this.imageResId = imageResId;
     }
 
+    public Product() {
+    }
+
     // Getters and setters
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
     public String getName() {
         return name;
     }
@@ -87,4 +100,21 @@ public class Product {
     public void setImageResId(int imageResId) {
         this.imageResId = imageResId;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Product product = (Product) obj;
+        return name.equals(product.name) && location.equals(product.location)
+                && price.equals(product.price) && owner.equals(product.owner)
+                && category.equals(product.category) && tradeType.equals(product.tradeType)
+                && imageUriString.equals(product.imageUriString);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, location, price, owner, category, tradeType, imageUriString);
+    }
+
 }

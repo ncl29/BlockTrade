@@ -8,7 +8,7 @@
     <uses-feature android:name="android.hardware.camera" android:required="true"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -46,6 +46,7 @@
         <activity android:name=".AddCaptionActivity" />
         <activity android:name=".ProductDetailsActivity" />
         <activity android:name=".EmailVerificationActivity" />
+        <activity android:name=".ChatActivity"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
